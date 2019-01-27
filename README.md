@@ -2,16 +2,16 @@
 *A priority queue lua module*
 ```lua
 local pqueue = require('pqueue')
-local q = pqueue.new()
+local pq = pqueue.new()
 
-q:enqueue(2, "hello")
-q:enqueue(1, 42)
-q:enqueue(3, {1, 2, 3})
-q:enqueue(4, 23)
+pq:enqueue(2, "hello")
+pq:enqueue(1, 42)
+pq:enqueue(3, {1, 2, 3})
+pq:enqueue(4, 23)
 
-local priority, value = q:dequeue()
+local priority, value = pq:dequeue()
 
-for priority, value in q:pairs() do
+for priority, value in pq:pairs() do
   print(priority, value)
 end
 ```
