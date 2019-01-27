@@ -12,7 +12,7 @@ pq:enqueue(4, 23)
 local priority, value = pq:dequeue()
 
 for priority, value in pq:pairs() do
-  print(priority, value)
+  --something
 end
 ```
 
