@@ -2,13 +2,13 @@ local pqueue = require('pqueue')
 local q = pqueue.new(1)
 
 local function enqueue(p, v)
-	q:enqueue(p, v)
-	print('enqueue\t', #q, p, v)
+  q:enqueue(p, v)
+  print('enqueue\t', #q, p, v)
 end
 
 local function dequeue()
-	local p, v = q:dequeue()
-	print('dequeue\t', #q, p, v)
+  local p, v = q:dequeue()
+  print('dequeue\t', #q, p, v)
 end
 
 print('\t', 'count', 'prio', 'val')
@@ -26,5 +26,5 @@ dequeue()
 enqueue(3, 42)
 
 for p, v in q:pairs() do
-	print('dequeue\t', #q, p, v)
+  print('dequeue\t', #q, p, v)
 end

@@ -9,15 +9,15 @@
 
 template <typename T>
 struct pq_node {
-	int prio;
-	T value;
+  int prio;
+  T value;
 };
 
 template <typename T>
 struct pqueue {
-	struct pq_node<T> *nodes;
-	size_t size;
-	size_t count;
+  struct pq_node<T> *nodes;
+  size_t size;
+  size_t count;
 };
 
 template <typename T>
