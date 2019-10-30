@@ -31,5 +31,5 @@ make install
 
 ## Demo
 ```
-lua -v demo.lua
+lua demo.lua
 ```
